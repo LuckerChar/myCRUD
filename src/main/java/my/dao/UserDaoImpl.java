@@ -12,9 +12,9 @@ public class UserDaoImpl implements UserDao {
     @PersistenceContext
     private EntityManager entityManager;
 
-//    public EntityManager getEntityManager() {
-//        return entityManager;
-//    }
+    public EntityManager getEntityManager() {
+        return entityManager;
+    }
 
     @Override
     public void saveUser(User user) {
