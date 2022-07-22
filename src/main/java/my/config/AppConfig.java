@@ -21,7 +21,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @PropertySource("classpath:db.properties")
 public class AppConfig {
-    public final Environment env;
+    private final Environment env;
     @Autowired
     public AppConfig(Environment env) {
         this.env = env;
